@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <title>نموذج تسجيل الطلاب</title>
+  <style>
+    body { font-family: 'Arial'; background: linear-gradient(#e0f7fa, #fff); padding: 20px; direction: rtl; }
+    form { background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px #ccc; max-width: 500px; margin: auto; }
+    input, select { width: 100%; padding: 10px; margin: 10px 0; }
+    button { padding: 10px 20px; background-color: #00796b; color: white; border: none; border-radius: 5px; }
+  </style>
+</head>
+<body>
+  <h2 style="text-align:center;">نموذج تسجيل طلاب الجمعية المحلية للمحافظة على القرآن الكريم</h2>
+  <form id="registrationForm">
+    <input type="text" name="firstName" placeholder="الاسم الأول" required>
+    <input type="text" name="lastName" placeholder="اسم العائلة" required>
+    <input type="number" name="age" placeholder="العمر" required>
+    <input type="tel" name="phone" placeholder="رقم الهاتف" required>
+    <input type="email" name="email" placeholder="البريد الإلكتروني" required>
+    <select name="level">
+      <option value="">اختر مقدار الحفظ</option>
+      <option value="1">1 جزء</option>
+      <option value="5">5 أجزاء</option>
+      <option value="10">10 أجزاء</option>
+      <option value="20">20 جزء</option>
+      <option value="30">القرآن كاملاً</option>
+    </select>
+    <button type="submit">تسجيل</button>
+  </form>
+</body>
+</html>
